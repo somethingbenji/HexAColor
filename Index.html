@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <meta charset="UTF-8">
+  <meta name="Viewport" content="width=device-width, initial-scale=1.0">
+     
+  <title>Hex Color Key Encryption</title>
+     
+</head>
+<body>
+  <main>
+    <h1>Hex Color Encryption</h1>
+    <h3>Aka "HexaColor"</h3>
+    <p>Based off by the hex color you put, this encrypting method will turn the hex into a secure key, meaning your message will be unique!</p>
+    <p>Hex color</p>
+       
+    <input minlength="6" maxlength="6" id="Color">
+       
+    <br>
+    <br>
+       
+    <b>Encryption</b>
+    <br>
+    <br>
+    <button onclick="encrypt()">Enc</button>
+    <br>
+    <p>Enter message:</p>
+    <textarea rows="3" cols="40" id="encInput"></textarea>
+    <br>
+    <p>Encrypted output:</p>
+    <textarea rows="3" cols="40" id="encOutput"></textarea>
+    <br>
+       
+    <b>Decryption</b>
+    <br>
+    <br>
+    <button onclick="decrypt()">Dec</button>
+    <br>
+    <p>Encrypted message:</p>
+    <textarea rows="3" cols="40" id="decInput"></textarea>
+    <br>
+    <p>Decrypted output:</p>
+    <textarea rows="3" cols="40" id="decOutput"></textarea>
+       
+       <script src="Script.js"></script>
+</body>
+</html>
